@@ -1,0 +1,170 @@
+{% load static %}
+{% include "header.html" %}
+		<div class="about-timeline-modal">
+
+			<div class="about-timeline-modal-bar">
+				<div class="wrap-o">
+					<div class="wrap-i flex justify-end">
+						
+					</div>
+				</div>
+			</div>
+
+			<div class="wrap-o h-full">
+				<div class="wrap-i h-full">
+					<div class="about-timeline-modal-inner flex flex-col lg:grid md:grid-cols-12 gap-32 h-full">
+						<div class="about-timeline-modal-content">
+							<div id="about-timeline-modal-year"></div>
+							<h3 id="about-timeline-modal-title"></h3>
+							<p id="about-timeline-modal-description">-</p>
+						</div>
+						<div class="about-timeline-modal-visual">
+							<div class="img-wrapper">
+								<img id="about-timeline-modal-image" src="" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="about-timeline-modal-bg">
+			<svg viewbox="0 0 0 0" class="about-timeline-modal-bg-svg">
+				<defs>
+					<clipPath id="about-timeline-modal-bg-mask">
+						<path id="about-timeline-modal-bg-svg-curve" fill="currentColor" d=""></path>
+					</clipPath>
+				</defs>
+			</svg>
+		</div>
+
+		<div data-router-wrapper>
+			<div data-router-view="contact" data-slug="contact" class="">
+				<div data-scroll>
+
+					<div data-scroll-item class="contact-header">
+						<div class="wrap-o">
+							<div class="wrap-i relative">
+								<div class="md:grid md:grid-cols-10 lg:grid-cols-12 md:gap-32 z-10">
+									<div class="md:col-span-5 md:col-start-1 lg:col-span-5 lg:col-start-2">
+										<h2 class="title-lg" data-animate-letters data-animate-delay='400'>
+											<span data-split-chars>get in</span>
+											<span data-split-chars>touch</span>
+										</h2>
+									</div>
+
+									<div class="md:col-span-5 md:col-start-7 lg:col-span-4 lg:col-start-8 contact-header-text p-md"
+										data-animate data-animate-delay='400' data-animate-y='5'>
+										<p>Together, we'll make your organization thrive through premium, personalized
+											immersive experiences.<br /><br />Curious about how we can help you with
+											your projects?<br /><br />Reach out and we’ll be happy to discuss your
+											plans!</p>
+									</div>
+								</div>
+
+								<div class="contact-header-imagery">
+									<div class="contact-header-img" data-animate data-animate-delay='450'
+										data-animate-y='5'>
+										<div class="contact-header-img-inner">
+
+											<picture>
+												<source
+													srcset="{% static '/assets/general/_jpgTransform/photo2.png' %}"
+													type="image/webp">
+												<source
+													srcset="{% static '/assets/general/_jpgTransform/Screenshot-2022-07-07-at-14.51.33.jpg' %}"
+													type="image/jpeg">
+												<img src="{% static '/assets/general/_jpgTransform/photo.jpeg' %}"
+													loading="lazy" alt="Poppr contact image" class="lazyload">
+											</picture>
+
+										</div>
+									</div>
+
+									<div class="contact-header-gl" data-gl-model="Marker"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div data-scroll-item class="contact-form form">
+						<div class="wrap-o" data-animate data-animate-delay='500' data-animate-y='5'>
+							<div class="wrap-i">
+								<form class="md:grid md:grid-cols-10 lg:grid-cols-12 md:gap-32" id="contact-form">
+									<div class="md:col-span-5 lg:col-start-2 form-section">
+										<div class="form-line-flex">
+											<input placeholder="Your name" id="form-input-name" type="text">
+											<label class="label" for="form-input-name">Your name</label>
+											<div class="form-message -empty">This field is required</div>
+										</div>
+										<div class="form-line-flex">
+											<input placeholder="Your phone number" id="form-input-phone" type="text">
+											<label class="label" for="form-input-phone">Your phone number</label>
+											<div class="form-message -invalid">This phone number isn&#039;t correct
+											</div>
+										</div>
+										<div class="form-line-flex">
+											<input placeholder="Your email" id="form-input-email" type="email">
+											<label class="label" for="form-input-email">Your email</label>
+											<div class="form-message -empty">This field is required</div>
+											<div class="form-message -invalid">This email isn&#039;t correct</div>
+										</div>
+									</div>
+									<div class="md:col-span-5 md:col-start-7 form-section">
+										<div class="form-line form-line-textarea">
+											<textarea placeholder="Your message" id="form-input-message" cols="30"
+												rows="9"></textarea>
+											<div class="form-message -empty">This field is required</div>
+										</div>
+									</div>
+									<div class="md:col-span-12 text-center form-section">
+										<div class="form-line form-line-checkbox">
+											<label class="label" for="form-input-Services">
+												<input type="checkbox" id="form-input-Services">
+												<span class="checkmark"></span>
+												<span>
+													Subscribe to our Services
+												</span>
+											</label>
+										</div>
+										<div class="form-line form-line-submit">
+											<div class="inline-flex button button-yellow" id="contact-form-submit">
+												<span class="button-bg">
+													<span class="button-bg-layers">
+														<span class="button-bg-layer button-bg-layer-1 -purple"></span>
+														<span
+															class="button-bg-layer button-bg-layer-2 -turquoise"></span>
+														<span class="button-bg-layer button-bg-layer-3 -yellow"></span>
+													</span>
+												</span>
+												<span class="button-inner">
+													<span class="button-inner-static">Submit</span>
+													<span class="button-inner-hover">Submit</span>
+												</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="md:col-span-12 form-feedback">
+										<div>
+											<div class="form-feedback-error">
+												<h3>
+													<span>Woops! Something</span>
+													<span>went wrong</span>
+												</h3>
+												<p>We&#039;ll get back to you as soon as possible.</p>
+											</div>
+
+											<div class="form-feedback-success">
+												<h3>
+													<span>thank you for</span>
+													<span>your message</span>
+												</h3>
+												<p>We&#039;ll get back to you as soon as possible.</p>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+{% include "footer.html" %}

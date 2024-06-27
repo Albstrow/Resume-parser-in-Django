@@ -1,0 +1,105 @@
+{% load static %}
+{% include "header.html" %}
+<div data-router-wrapper>
+    <div data-router-view="homepage" data-slug="homepage" class="">
+        <div data-scroll>
+
+            <div class="home-cta" data-scroll-item data-color-section data-color-opacity=".4" data-color-one="purple"
+                data-color-two="yellow">
+                <div class="wrap-o">
+                    <div class="wrap-i">
+                        <div class="home-cta-img-wrap">
+                            <div class="home-cta-img" data-parallax-top='.95' data-pan-wrap>
+                                <div class="home-cta-img-outer" data-pan>
+                                    <div class="home-cta-img-inner gradient-overlay" data-parallax-top='.85'>
+                                        <img src="{% static '/assets/general/_jpgTransform/photo2.png' %}" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home-cta-text" data-parallax-top='1.025'>
+                            <h2 class="title-lg">
+                                <span data-split-chars>Accelerate   </span>
+                                <span data-split-chars> Resume</span>
+                                <span data-split-chars>Review</span>
+                            </h2>
+                            <a href="{% url 'homepage' %}" class="button button-yellow">
+                                <span class="button-bg">
+                                    <span class="button-bg-layers">
+                                        <span class="button-bg-layer button-bg-layer-1 -purple"></span>
+                                        <span class="button-bg-layer button-bg-layer-2 -turquoise"></span>
+                                        <span class="button-bg-layer button-bg-layer-3 -yellow"></span>
+                                    </span>
+                                </span>
+                                <span class="button-inner">
+                                    <span class="button-inner-static">click here</span>
+                                    <span class="button-inner-hover">click here</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-cta-scroll-cta" data-parallax-top='1.25' data-scroll-to="work">
+                    <div class="home-cta-scroll-cta-wrapper">
+                        <div class="home-cta-scroll-cta-background">
+                            <div class="home-cta-scroll-cta-background-inner"></div>
+                        </div>
+                        <div class="home-cta-scroll-cta-arrow">
+                            <div class="home-cta-scroll-cta-arrow-inner">
+                                <div class="home-cta-scroll-cta-arrow-static">
+                                    <img src="{% static '/assets/svg/arrow-up.svg' %}" alt="arrow up">
+                                </div>
+
+                                <div class="home-cta-scroll-cta-arrow-hover">
+                                    <img src="{% static '/assets/svg/arrow-up.svg' %}" alt="arrow up">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="home-selected-work" data-scroll-item="work" data-color-section data-color-opacity=".5"
+                data-color-one="purple" data-color-two="black">
+                <div class="wrap-o z-10">
+                    <div class="wrap-i">
+                        <div class="home-selected-work-text | grid grid-cols-4 md:grid-cols-12 gap-32">
+                            
+                            <div class="col-span-3 md:col-span-5 md:col-start-6" data-split-articles>
+                                <p>"Optimize your hiring process,   
+                                    <span class="colored-text text-purple-dark"> save time,</span> 
+                                    <span class="colored-text text-turquoise-light">and find the perfect candidates </span>
+                                    <span class="colored-text text-yellow-light">faster </span>
+                                    with our innovative resume parsing technology."
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- DISCOVER MORE -->
+                <div class="wrap-o" data-animate data-animate-delay='550'>
+                    <div class="wrap-i">
+                        <div class="grid grid-cols-4 md:grid-cols-12 gap-32">
+                            <div class="col-span-4 md:col-span-3 md:col-start-2 mobile:text-center">
+                                <a href="{% url 'homepage' %}" class=" button button-outlined" data-button-svg>
+                                    <span class="button-inner">
+                                        <span class="button-inner-static">Discover more about parser</span>
+                                        <span class="button-inner-hover">Discover more about parser </span>
+                                    </span>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            {% include "footer.html" %}
