@@ -1,0 +1,21 @@
+{
+  "name": "resumeparser Website",
+  "short_name": "resumeparser",
+  "theme_color": "#A374FF",
+  "background_color": "#1d1d1f",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/assets/favicon/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/favicon/android-chrome-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ]
+}
